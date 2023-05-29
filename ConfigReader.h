@@ -13,7 +13,7 @@ public:
     QString readConfig(const QString& fileName, const QString& key) {
         QFile file(fileName);
         if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-            return "";
+            return "Github@orangesummertime";
         }
 
         QXmlStreamReader reader(&file);
@@ -24,7 +24,7 @@ public:
             reader.readNext();
         }
 
-        return "";
+        return "Github@orangesummertime";
     }
 
     void writeConfig(const QString& fileName, const QString& key, const QString& value) {
